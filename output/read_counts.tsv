@@ -1,0 +1,20 @@
+# Created by: RiboViz
+# Date: 2021-01-19 06:29:46.054733
+# Command-line tool: /home/ubuntu/riboviz/riboviz/tools/count_reads.py
+# File: /home/ubuntu/riboviz/riboviz/count_reads.py
+# Version: commit 7aad0d0385ef62bb0e0f86f4849e4e15929f0d3e date 2021-01-18 09:51:25-05:00
+SampleName	Program	File	NumReads	Description
+WTnone	input	/home/ubuntu/riboviz/vignette/input/SRR1042855_s1mi.fastq.gz	963571	input
+WT3AT	input	/home/ubuntu/riboviz/vignette/input/SRR1042864_s1mi.fastq.gz	1374448	input
+WT3AT	cutadapt	/home/ubuntu/riboviz/vignette/tmp/WT3AT/trim.fq	1373362	Reads after removal of sequencing library adapters
+WT3AT	hisat2	/home/ubuntu/riboviz/vignette/tmp/WT3AT/nonrRNA.fq	486233	rRNA or other contaminating reads removed by alignment to rRNA index files
+WT3AT	hisat2	/home/ubuntu/riboviz/vignette/tmp/WT3AT/rRNA_map.sam	887129	Reads with rRNA and other contaminating reads removed by alignment to rRNA index files
+WT3AT	hisat2	/home/ubuntu/riboviz/vignette/tmp/WT3AT/unaligned.fq	477792	Unaligned reads removed by alignment of remaining reads to ORFs index files
+WT3AT	hisat2	/home/ubuntu/riboviz/vignette/tmp/WT3AT/orf_map.sam	8698	Reads aligned to ORFs index files
+WT3AT	riboviz.tools.trim_5p_mismatch	/home/ubuntu/riboviz/vignette/tmp/WT3AT/orf_map_clean.sam	8698	Reads after trimming of 5' mismatches and removal of those with more than 2 mismatches
+WTnone	cutadapt	/home/ubuntu/riboviz/vignette/tmp/WTnone/trim.fq	952343	Reads after removal of sequencing library adapters
+WTnone	hisat2	/home/ubuntu/riboviz/vignette/tmp/WTnone/nonrRNA.fq	467194	rRNA or other contaminating reads removed by alignment to rRNA index files
+WTnone	hisat2	/home/ubuntu/riboviz/vignette/tmp/WTnone/rRNA_map.sam	485149	Reads with rRNA and other contaminating reads removed by alignment to rRNA index files
+WTnone	hisat2	/home/ubuntu/riboviz/vignette/tmp/WTnone/unaligned.fq	452996	Unaligned reads removed by alignment of remaining reads to ORFs index files
+WTnone	hisat2	/home/ubuntu/riboviz/vignette/tmp/WTnone/orf_map.sam	14516	Reads aligned to ORFs index files
+WTnone	riboviz.tools.trim_5p_mismatch	/home/ubuntu/riboviz/vignette/tmp/WTnone/orf_map_clean.sam	14516	Reads after trimming of 5' mismatches and removal of those with more than 2 mismatches
